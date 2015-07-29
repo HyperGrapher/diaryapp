@@ -1,4 +1,5 @@
-#!usr/bin/python
+#!/usr/bin/env python3
+#-*- coding:utf-8 -*-
 
 #29-07-2015 18:57:59 
 
@@ -29,6 +30,7 @@ def add_entry():
 def view_entries():
     "view entry"
     
+    
 def delete_entry():
     "deletes entry"
 
@@ -36,8 +38,8 @@ def delete_entry():
 if __name__ == '__main__':
     initialize()
     menu_loop()
-    print("burak")
-    
+
+
 
     
 
