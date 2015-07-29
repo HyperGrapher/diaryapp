@@ -11,21 +11,17 @@ class Entry(Model):
     content = TextField()
     timestamp = DateTimeField(default=datetime.datetime.now)
     
-    
-    
-    
     class Meta:
         database = db
  
 def initialize():
     """create the db and table if they don't exist"""
     db.connect()
-    db.create([Entry], safe=True)
+    db.create_tables([Entry], safe=True)
            
         
 def menu_loop():
     """shows menu"""
-    
     
 def add_entry():
     """adds entry"""
@@ -35,13 +31,13 @@ def view_entries():
     
 def delete_entry():
     "deletes entry"
-    
-    
 
 
 if __name__ == '__main__':
     initialize()
+    menu_loop()
     print("burak")
+    
 
     
 
